@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    color:white;
+    padding: 0;
+    background-color: pink;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.background-text {
+    font-family: dock11;
+    font-size: 80px;
+    letter-spacing: 5px;
+    font-weight: bold;
+
+    animation: bg-animation 30s cubic-bezier(0.3,0,0.7,1)
+}
+
+@keyframes bg-animation {
+    0% {background-position: 0% 0%;}
+    50% {background-position: 100% 100%;}
+    100% {background-position: 0% 0%;}
+
+}
+
+h1{
+    text-align: center;
+}
+p {
+    text-align: center;
+    color: black;
+}
+
+.container1{
+    margin: 7px;
+    height:70px;
+    width: 125px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    background: linear-gradient(45deg, #e6fb04, #ff6600, #00ff66, #00ffff,
+    #ff00ff, #ff0099, #6e0dd0, #ff3300, #099fff);
+    background-size: 400%;
+    animation: animate 20s linear infinite;
+}
+
+
+
+#quiz-container{
+    height: 520px;
+    width: 350px;
+    padding: 0px 20px;
+    border-radius: 70px;
+    margin: 50px;
+    background-color: rgba(219, 135, 9, 0.219);
+    backdrop-filter: blur(8px);
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.089);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 25;
+}
+
+.quiz-btn1{
+    margin: 0;
+    padding: 15px 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 12px;
+    width: 125px;
+    height: 70px;
+    text-align:center;
+    color:black;
+    z-index: 50;
+    transition: transform 0.3s ease;
+}
+
+.quiz-btn1:hover{
+    transform:scale(0.9);
+    border: 2px solid transparent;
+}
+
+
+@keyframes animate {
+    0% {background-position: 0 0;}
+
+    50% {background-position: 400% 0;}
+
+    100% {background-position: 0 0;}
+}
+
+.glow::after{
+    filter: blur(40px);
+    opacity: 0.99;
+}
+
+@keyframes bg-animation {
+    0% {background-position: 0% 0%;}
+    50% {background-position: 100% 100%;}
+    100% {background-position: 0% 0%;}
+}
+
+
